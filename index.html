@@ -4,32 +4,43 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <h1 class="title">Dogs vs Cats</h1>
-        <p class="description">description</p>
+        <p class="description">Is their more dog or cat lovers in the world? The world may now know!! Submit this Survey for results.</p>
         <form id="survey-form"></form>
-            <label id="name-label">Name <input id="name-label" type="text" required placeholder="text" /></label>
-            <label id="email">Email <input id="email" type="email" required placeholder="text" /></label>
-            <label id="number-label">Amount of Love (Two options) <input id="number-label" type="number" min="1" max="10" placeholder="1"></label>
-            <select id="dropdown">
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-                <option>6</option>
-                <option>7</option>
-                <option>8</option>
-                <option>9</option>
-                <option>10</option>
-              </select>
-            <label id="button 1"><input type="radio" value="yes" name="button 1" />Dog</label>
-            <label id="button 1" ><input type="radio" value="no" name="button 1" />Cat</label>
-            <input type="checkbox" value="cat" name="button 2" />
-            <input type="checkbox" value="dog" name="button 2" />
-            <textarea ></textarea>
-            <button id="submit" type="submit">Submit</button>
+            <div class="top-info">
+                <label id="name-label">Name <input id="name-label" type="text" required placeholder="text" /></label>
+                <label id="email">Email <input id="email" type="email" required placeholder="text" /></label>
+            </div>
+            <div class="middle-info">
+                <label id="number-label">Amount of Love (Two options) <input id="number-label" type="number" min="1" max="10" placeholder="1"></label>
+                <select id="dropdown">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
+                </select>
+            </div> 
+            <div class="border"></div>   
+            <div class="buttons">
+                <label id="button 1"><input type="radio" value="dog" name="button 1" />Dog</label>
+                <label id="button 1" ><input type="radio" value="cat" name="button 1" />Cat</label>
+                <label id="button 2"></label><input type="checkbox" value="yes" name="button 2" />1</label>
+                <label id="button 2"></label><input type="checkbox" value="no" name="button 2" />2+</label>
+            </div>    
+            <div class="submit-form">
+                <textarea name="textarea" rows="5" cols="30" placeholder="Why I love my dog/cat..."></textarea>
+                <button id="submit" type="submit">Submit</button>
+            </div>    
         </form>
     </body> 
 </html>

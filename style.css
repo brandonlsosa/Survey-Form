@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.title {
+    text-align: center;
+    padding: 5px 0 5px 0;;
+    position: sticky;
+}
+
+.description {
+    text-align: center;
+    overflow: auto;
+    margin: 10px auto;
+}
+
+.top-info {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+}
+
+.middle-info {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.border {
+    border-width: 5px;
+    color: black;
+    border-style: solid;
+    margin: 10px 0 10px 0;
+}
+
+.description:hover {
+    background-color: black;
+    background: solid 1px;
+    color: aliceblue;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.submit-form {
+    display: flex;
+    justify-content: center;
+    gap: 10;
+    margin-top: 10px;
+}
